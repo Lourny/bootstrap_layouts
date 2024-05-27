@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a[href="https://google.com"]{
+    background-color: blueviolet;
+    padding: 20px;
+    display: block;
+    width: 40%;
+    text-decoration: none;
+    font-size: larger;
+    text-align: center;
+    color: aliceblue;
+    margin: 40px auto;
+}
+a[href="https://google.com"]:hover{
+    background-color: rgb(72, 18, 122);
+
+}
+a[href="https://google.com"]::before{
+    content: "";
+    background-color: tomato;
+    padding: 20px;
+}
+a[href="https://google.com"]::after{
+    content: "";
+    background-color: rgb(255, 99, 71);
+    padding: 20px;
+}
+
+input[type="checkbox"]:checked+span{
+    font-size: 60px;
+}
+input[type="text"]::placeholder{
+
+    font-size: larger;
+    color: rgba(0, 0, 255, 0.294);
+}
